@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useEffect } from 'react';
-import { Button } from '@/components/ui/button';
-import { AlertTriangle } from 'lucide-react';
+import { useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { AlertTriangle } from "lucide-react";
 
 export default function Error({
   error,
@@ -23,11 +23,14 @@ export default function Error({
           Something went wrong!
         </h1>
         <p className="text-muted-foreground mb-6">
-          {error.message || 'An unexpected error occurred'}
+          {error.message || "An unexpected error occurred"}
         </p>
         <div className="flex gap-4 justify-center">
-          <Button onClick={() => reset()}>Try again</Button>
-          <Button variant="outline" onClick={() => (window.location.href = '/')}>
+          <Button onClick={() => reset()}>try again</Button>
+          <Button
+            variant="outline"
+            onClick={() => (window.location.href = "/")}
+          >
             Go Home
           </Button>
         </div>
